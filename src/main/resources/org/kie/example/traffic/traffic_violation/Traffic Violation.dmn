@@ -1,6 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_FEC18C35-A22F-4C86-ADC4-A44028E058B7" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_65757D2E-713D-47D3-B061-533CC10371A2" name="Traffic Violation" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_FEC18C35-A22F-4C86-ADC4-A44028E058B7">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_7B8B6C19-E8CC-49A0-B86F-FCA96227E866" name="tDriver" isCollection="false">
+    <dmn:itemComponent id="_D27B3FDA-3A82-4DEB-98A0-8E8BA303EBEA" name="Name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_659ACF14-B160-4954-ABF2-CF440CEA5E93" name="Age" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_24B32B31-7E32-46CC-98B2-671D686BBF18" name="State" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_960105D2-F444-4FBB-9119-5A809AB4F0CC" name="City" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_32BEF8C7-AB83-4C60-AE86-CCB6FF73CA72" name="Points" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_AE077FDD-6047-4944-AEF1-FE64FE56AED6" name="tViolation" isCollection="false">
+    <dmn:itemComponent id="_DE4742B8-DBF8-4B4A-8740-844808731F28" name="Code" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_9E30B219-F147-4AE8-8887-51F04B6BAA3E" name="Date" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_F85CF8B1-7B0C-4A63-B65D-3B28AD584F94" name="Type" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_BAB10F02-4FF7-4316-83AA-3605C06228D5">
+        <dmn:text>"speed", "parking", "driving under the influence"</dmn:text>
+      </dmn:allowedValues>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_780F7B3A-C0C1-4636-B1BD-B88B49A1E030" name="Speed Limit" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_1241973B-AD04-438A-9358-62620B4BAF68" name="Actual Speed" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_B713249A-DACA-4F23-BE66-F6DC81E1B945" name="tFine" isCollection="false">
+    <dmn:itemComponent id="_DA6E5F15-ADC3-44A8-B542-BE56186B563A" name="Amount" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_F4A6D6D2-A473-4368-8DFE-DDD2C230F203" name="Points" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:inputData id="_773DA03B-868F-453A-8FCD-4FB0E73FF869" name="Violation">
     <dmn:extensionElements/>
     <dmn:variable id="_6E1AACF0-7C40-4AE5-A2A8-8977E14FF826" name="Violation"/>
