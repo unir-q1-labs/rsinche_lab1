@@ -149,11 +149,11 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_55CDDD4A-B658-4A42-9C35-DA2FF7EAE881">
             <kie:width>50.0</kie:width>
+            <kie:width>187.0</kie:width>
+            <kie:width>330.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>100.0</kie:width>
-            <kie:width>100.0</kie:width>
-            <kie:width>100.0</kie:width>
+            <kie:width>122.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
