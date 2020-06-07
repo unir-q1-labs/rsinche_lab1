@@ -118,13 +118,27 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_8B495A05-961A-4D81-9EF5-7E83E7491AF2">
-          <dmn:text>-</dmn:text>
+          <dmn:text>"parking"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_F7F4A4C7-7BA0-4A0C-BFD5-8B4308391144">
-          <dmn:text></dmn:text>
+          <dmn:text>100</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_572A5452-365E-44BB-9C71-9E9759DA45FD">
-          <dmn:text></dmn:text>
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_7FA548DE-A646-4DAB-B43A-44D3954E6BEE">
+        <dmn:inputEntry id="_CCB02B93-6506-400B-8937-851E8761C4A2">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F62C0CCA-2882-4F71-9FEA-0E4A759C2C2D">
+          <dmn:text>"driving under the influence"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_578191EF-C8AB-41CF-A095-D87EE0D30AC3">
+          <dmn:text>1000</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_49FBC8C7-2DD2-422A-BD55-CB011B6F16AE">
+          <dmn:text>5</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
